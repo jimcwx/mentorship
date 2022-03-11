@@ -1,7 +1,9 @@
 const app = require("./app");
 
-const port = process.env.PORT || 2600;
-const https = require("https");
+const port = process.env.PORT || 2700;
+const http = require("http");
 const fs = require("fs");
 
-https.createServer(app).listen(port);
+app.listen(port, () => {
+  console.log('running on port')
+});
