@@ -3,7 +3,6 @@ const controller = require("./controller");
 
 router
   .route('/')
-  .get(controller.getUser)
-  .post(controller.addUser)
+  .post(controller.assembleParts)
 
 module.exports = router;

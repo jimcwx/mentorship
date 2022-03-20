@@ -19,7 +19,7 @@ const controller = {
 		} catch (e) {
 			next(e);
 		}
-	}
+	},
 };
 
 module.exports = controller;
